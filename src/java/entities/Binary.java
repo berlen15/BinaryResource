@@ -7,6 +7,10 @@ import javax.ws.rs.QueryParam;
 
 @Stateless @Path("/binary")
 public class Binary {
+
+    public Binary() {
+    }
+      
     @GET
     public String binary(@QueryParam("num") long num) {
         return (xbinary(num));
